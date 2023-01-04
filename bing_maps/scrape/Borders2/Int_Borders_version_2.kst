@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Theme>
+	<name>Int_Borders version 2</name>
+	<colorMapping>
+		<ConstantMapping_int><value>-1578001</value>
+</ConstantMapping_int>
+	</colorMapping>
+	<iconMapping>
+		<ConstantMapping_string><value>-1</value>
+</ConstantMapping_string>
+	</iconMapping>
+	<clampMode>1</clampMode>
+</Theme>
+</kml>
