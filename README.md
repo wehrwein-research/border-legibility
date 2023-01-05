@@ -7,10 +7,11 @@ Public code release for borders project
 In order to scrape tiles, you must acquire a key from Bing's API, and put it in "/border-legibility/bing_maps/scrape/bing_key.txt"
 This can be acquired at https://www.microsoft.com/en-us/maps/create-a-bing-maps-key
 
-You then will run "/border-legibility/bing_maps/scrape/bing_scrape.py" with (optionally) the desired name of the scrape directory as the first 
-command-line argument.
+You then will run "/border-legibility/bing_maps/scrape/bing_scrape.py" with (optionally) the 
+desired name of the scrape directory as the first command-line argument.
 
-You must then run "/border-legibility/data/getBorders.py" in order to create the .npy shape files for each tile.
+You must then run "/border-legibility/data/getBorders.py" with your scrape directory name as first command line
+argument in order to create the .npy shape files for each tile.
 
 **Note: The first couple tiles in each border directory (ie: usa-mex-00000, usa-mex-00001) will likely be unusable, as the border may not extend across the entire tile, since the border ends at this point.** 
 
