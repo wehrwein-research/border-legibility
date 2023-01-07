@@ -1,6 +1,8 @@
 # border-legibility
 
-Public code release for borders project
+## Computer Vision For International Border Legibility
+#### Trevor Ortega, Thomas Nelson, Skyler Crane, Josh Myers-Dean, Scott Wehrwein
+Project Page: https://facultyweb.cs.wwu.edu/~wehrwes/BorderLegibility/
 
 ## scraping tiles
 
