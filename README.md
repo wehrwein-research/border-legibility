@@ -35,7 +35,7 @@ and the siamese model in "/border-legibility/MODEL/siamese.py"
 1. Create image list by running "/border-legibility/bing_maps/create_image_list.py" with the name of the scrape directory as the first command 
 line argument. (Ex: $ python3 create_image_list.py global_scrape)
 
-2. Run model by running "/border-legibility/MODEL/siamese.py" with the name of your scrape directory as the first command-line argument.
+2. Run model by running "/border-legibility/MODEL/siamese.py" with the name of your scrape directory as the first command-line argument. Results will be found in "/border-legibility/MODEL/contrastive/mix/res/final4.ckpt"
 
 #### Baselines:
 
