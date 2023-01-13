@@ -61,6 +61,7 @@ def analyze_annotations(df, save_file=None, chains=3, n_iter=2500, seed=1234, n_
     data = {
         "y":y, "g":g, "h":h, "N":N, "M":M, "P":P, "j":j
     }
+    
     posterior = stan.build(model_code, data=data, random_seed=random_seed)
     
     fit = posterior.sample(num_chains=chains, num_samples=n_iter)

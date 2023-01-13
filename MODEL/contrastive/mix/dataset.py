@@ -72,7 +72,6 @@ class BordersDataset(Dataset):
         # (13, 13), (2, 2), (25, 25), (4, 4)
         x = kornia.filters.gaussian_blur2d(x.float(), (25, 25), (4, 4))
         if rot:
-            #x = kornia.geometry.transform.rotate(x, torch.randint(0, 360, (1,)).float())
             if random.random() > 0.5:
                 x = kornia.geometry.transform.vflip(x)
             if random.random() > 0.5:
@@ -160,7 +159,6 @@ class BordersDataset(Dataset):
         should_rot_mask = random.random() < 0.5
         should_flip_x1_x2 = random.random() > 0.5
 
-        #y = torch.ones(2).squeeze().float()
         y = torch.ones(1).squeeze().long()
 
         if should_be_same_img: 
@@ -178,7 +176,6 @@ class BordersDataset(Dataset):
                     while mask is None:
                         mask = create_tri_mask(tile, (h,w), (h,w), color=2, 
                                                thick=random.randrange(5, 30), show=False)
-                #y[0] = 0
             else:
                 # random choose to make both x1 or x2
                 if random.random() > 0.5:

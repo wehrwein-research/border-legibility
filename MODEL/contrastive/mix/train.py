@@ -9,7 +9,7 @@ from dataset import BordersDataset, get_train_and_val_loader
 from model import SiameseDecider, SiameseDeciderOld
 sys.path.append('../../../data')
 
-PROJ_ROOT = str(Path(*Path.cwd().parts[:Path().cwd().parts.index('borders')+1]))
+PROJ_ROOT = str(Path(*Path.cwd().parts[:Path().cwd().parts.index('border-legibility')+1]))
 SAVE_DIR = PROJ_ROOT + '/MODEL/contrastive/mix/weights/'
 
 def get_config(args):

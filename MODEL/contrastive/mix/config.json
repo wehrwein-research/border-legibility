@@ -1,0 +1,11 @@
+// Set img_list to file resulting of running "/border-legibility/bing_maps/create_image_list.py"
+{
+    "name": "weights.pth",
+    "img_list": "ROOT/border-legibiliy/bing_maps/global-rectified-point4/valid_image_list.txt",
+    "num_epochs": 100,
+    "n": 50000,
+    "ratio": 0.8,
+    "lr": 1e-3,
+    "batch_size":8,
+    "weight_decay":0
+}

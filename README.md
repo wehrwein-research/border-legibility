@@ -23,6 +23,10 @@ Can collect annotations through the jupyter notebook in the turk directory. Both
 
 If you have never used mturk through jupyter before, here is a post that should help you get set up: https://blog.mturk.com/tutorial-a-beginners-guide-to-crowdsourcing-ml-training-data-with-python-and-mturk-d8df4bdf2977
 
+## Training Siamese Model:
+
+Instructions found in "/border-legibility/MODEL/contrastive/mix/README.md"
+
 ## Running models
 
 Once all shape files have been created, you can run the various models in "/border-legibility/MODEL/modelComparisons.py" (baseline methods) 
@@ -32,10 +36,7 @@ and the siamese model in "/border-legibility/MODEL/siamese.py"
 
 #### Siamese:
 
-1. Create image list by running "/border-legibility/bing_maps/create_image_list.py" with the name of the scrape directory as the first command 
-line argument. (Ex: $ python3 create_image_list.py global_scrape)
-
-2. Run model by running "/border-legibility/MODEL/siamese.py" with the name of your scrape directory as the first command-line argument. Results will be found in "/border-legibility/MODEL/contrastive/mix/res/final4.ckpt"
+1. Run model by running "/border-legibility/MODEL/siamese.py" with the name of your scrape directory as the first command-line argument. Results will be found in "/border-legibility/MODEL/contrastive/mix/res/final4.ckpt"
 
 #### Baselines:
 

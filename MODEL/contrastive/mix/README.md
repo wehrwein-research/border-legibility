@@ -1,3 +1,8 @@
+## Before training
+
+Create image list by running "/border-legibility/bing_maps/create_image_list.py" with the name of the scrape directory as the first command 
+line argument. (Ex: $ python3 create_image_list.py global_scrape)
+
 ## Training
 Training is meant to be as simple as:
 ` python train.py config.json `
@@ -5,6 +10,7 @@ Training is meant to be as simple as:
 This uses the SiameseDecider model defined in`model.py`, the hyper parameters defined in`config.json`, and random images from our dataset to train and log results via wandb and pytorch lightning.
 
 The results of the training are saved in `./weights` with the name defined in `config.json`. 
+Make sure to set up the correct file path in `config.json`.
 
 If you want to train but disable logging, do:
 `python train.py config.json no`
@@ -33,8 +39,3 @@ x2 = model.trainloader.dataset.prep_img(og_x2, rot=False).unsqueeze(0).to(device
 y_hat = model(x1, x2).cpu().squeeze().softmax(dim=0).detach().tolist()
 
 ```
-### Notes
-Weights used in paper: mixLr3-gauss.ckpt
-Most accurate wieghts on turk 1000 (accuracy): mixLr3.ckpt
-
-
