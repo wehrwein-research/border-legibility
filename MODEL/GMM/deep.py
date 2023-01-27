@@ -58,7 +58,6 @@ def prep_model(layer=1):
     config = resolve_data_config({}, model=modelBig)
     transform = create_transform(**config)
     model = None
-    layer=3
     if layer == 1:
         model = get_model_1(modelBig) 
     elif layer == 2:
