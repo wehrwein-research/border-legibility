@@ -5,7 +5,7 @@
     "num_epochs": 100,
     "n": 50000,
     "ratio": 0.8,
-    "lr": 1e-3,
+    "lr": 1e-5,
     "batch_size":8,
     "weight_decay":0
 }
